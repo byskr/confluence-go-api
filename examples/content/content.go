@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"log"
 
-	goconfluence "github.com/virtomize/confluence-go-api"
+	goconfluence "github.com/byskr/confluence-go-api"
 )
 
 func main() {
@@ -23,7 +23,7 @@ func main() {
 	}
 	fmt.Printf("%+v\n", c)
 
-	//get content by query
+	// get content by query
 	res, err := api.GetContent(goconfluence.ContentQuery{
 		SpaceKey: "IM",
 	})
